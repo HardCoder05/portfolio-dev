@@ -1,67 +1,85 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Badge from '../components/Badge.astro';
-import LinkedinIcon from '../components/Icons/Linkedin.astro';
-import GithubIcon from '../components/Icons/Github.astro';
-import MailIcon from '../components/Icons/Mail.astro';
-import Proyectos from '../components/Proyectos.astro';
-import SobreMi from '../components/SobreMi.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedinIcon from "../components/Icons/Linkedin.astro";
+import GithubIcon from "../components/Icons/Github.astro";
+import MailIcon from "../components/Icons/Mail.astro";
+import Proyectos from "../components/Proyectos.astro";
+import SobreMi from "../components/SobreMi.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Leonardo Rico - Portfolio de Ingeniero Informático" description="Contrata al mejor programador del mundo">
-	<main class="px-6">
-		<!-- md:max-w-4xl mx-10 md:mx-auto pt-16 md:pt-36 -->
-		<section class="lg:w-[740px] md:mx-auto md:pt-44 pt-28 w-full">
-			<h1 class="flex flex-row font-bold gap-x-4 md:text-3xl pb-10 text-white text-xl">
-				Hola, soy Ingeniero Informatico 
-				<a href="/public/ex2_aplica.pdf" download 
-				class="flex justify-center items-center">
-				<Badge>Disponible para trabajar</Badge> </a>
-			</h1>
-			
-			<h2 class="max-w-[700px] md:text-xl opacity-80 text-pretty text-sm text-white">
-				Estoy en busca de una oportunidad laboral competente para aplicar y expandir mis conocimientos técnicos, 
-				contribuyendo al desarrollo de software. Estoy emocionado por la posibilidad de colaborar en proyectos 
-				innovadores y aprender de profesionales experimentados en la industria.
-			</h2>
+<Layout
+  title="Leonardo Rico - Portfolio de Ingeniero Informático"
+  description="Contrata al mejor programador del mundo"
+>
+  <main class="px-6">
+    <!-- md:max-w-4xl mx-10 md:mx-auto pt-16 md:pt-36 -->
+    <section class="lg:w-[740px] md:mx-auto md:pt-44 pt-28 w-full">
+      <h1
+        class="flex flex-row font-bold gap-x-4 md:text-3xl pb-10 text-white text-xl"
+      >
+        Hola, soy Ingeniero Informatico
+        <a
+          href="/ex2_aplica.pdf"
+          download
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
 
-			<nav class="flex gap-4 mt-8 flex-wrap">
-				<a href="https://linkedin.com/in/leonardo-rico"  target="_blank"
-				   class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2 
-				   		hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition">
-					<LinkedinIcon class="size-5 md:size-6"/>
-					Linkedin
-				</a>
+      <h2
+        class="max-w-[700px] md:text-xl opacity-80 text-pretty text-sm text-white"
+      >
+        Estoy en busca de una oportunidad laboral competente para aplicar y
+        expandir mis conocimientos técnicos, contribuyendo al desarrollo de
+        software. Estoy emocionado por la posibilidad de colaborar en proyectos
+        innovadores y aprender de profesionales experimentados en la industria.
+      </h2>
 
-				<a href="https://github.com/HardCoder05"  target="_blank"
-				   class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2 
-				   	hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition">
-					<GithubIcon class="size-5 md:size-6"/>
-					Github
-				</a>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <a
+          href="https://linkedin.com/in/leonardo-rico"
+          target="_blank"
+          class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2
+				   		hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition"
+        >
+          <LinkedinIcon class="size-5 md:size-6" />
+          Linkedin
+        </a>
 
-				<a href="mailto:rio88920@gmail.com" 
-				   class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2 
-				   	hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition">
-					<MailIcon class="size-5 md:size-6"/>
-					rio88920@gmail.com
-				</a>
-			</nav>
-		</section>
+        <a
+          href="https://github.com/HardCoder05"
+          target="_blank"
+          class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2
+				   	hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition"
+        >
+          <GithubIcon class="size-5 md:size-6" />
+          Github
+        </a>
 
-		<!-- Descripcion de los proyectos -->
-		<section class="lg:w-[740px] md:mx-auto w-full">
-			<Proyectos/>
-		</section>
+        <a
+          href="mailto:rio88920@gmail.com"
+          class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2
+				   	hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition"
+        >
+          <MailIcon class="size-5 md:size-6" />
+          rio88920@gmail.com
+        </a>
+      </nav>
+    </section>
 
-		<!-- Sobre mi -->
-		<section class="lg:w-[740px] md:mx-auto w-full">
-			<SobreMi/>
-		</section>
-	</main>
-	<Footer/>
+    <!-- Descripcion de los proyectos -->
+    <section class="lg:w-[740px] md:mx-auto w-full">
+      <Proyectos />
+    </section>
+
+    <!-- Sobre mi -->
+    <section class="lg:w-[740px] md:mx-auto w-full">
+      <SobreMi />
+    </section>
+  </main>
+  <Footer />
 </Layout>
-
-
