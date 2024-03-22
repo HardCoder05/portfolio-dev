@@ -11,16 +11,17 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Leonardo Rico - Portfolio de Ingeniero Informático" description="">
-	<main>
-		<section class="md:max-w-4xl mx-10 md:mx-auto pt-16 md:pt-36">
-			<h1 class="text-white text-2xl md:text-3xl font-bold flex flex-row gap-x-4 pb-6 text-pretty">
+	<main class="px-6">
+		<!-- md:max-w-4xl mx-10 md:mx-auto pt-16 md:pt-36 -->
+		<section class="w-full md:mx-auto lg:w-[740px] pt-28 md:pt-44">
+			<h1 class="text-white text-xl md:text-3xl font-bold flex flex-row gap-x-4 pb-10">
 				Hola, soy Ingeniero Informatico 
 				<a href="/public/ex2_aplica.pdf" download 
 				class="flex justify-center items-center">
 				<Badge>Disponible para trabajar</Badge> </a>
 			</h1>
 			
-			<h2 class="text-md md:text-xl opacity-80 text-white text-pretty">
+			<h2 class="text-sm md:text-xl opacity-80 text-white text-pretty max-w-[700px]">
 				Estoy en busca de una oportunidad laboral competente para aplicar y expandir mis conocimientos técnicos, 
 				contribuyendo al desarrollo de software. Estoy emocionado por la posibilidad de colaborar en proyectos 
 				innovadores y aprender de profesionales experimentados en la industria.
@@ -43,7 +44,7 @@ import Footer from '../components/Footer.astro';
 
 				<a href="mailto:rio88920@gmail.com" 
 				   class="text-white rounded-full border border-white/10 flex justify-center items-center gap-x-2 
-				   		py-1 px-2 md:py-2 md:px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition">
+				   		px-2 py-2 md:px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition">
 					<MailIcon class="size-5 md:size-6"/>
 					rio88920@gmail.com
 				</a>
@@ -51,10 +52,12 @@ import Footer from '../components/Footer.astro';
 		</section>
 
 		<!-- Descripcion de los proyectos -->
-		<Proyectos/>
+		<section class="w-full md:mx-auto lg:w-[740px]">
+			<Proyectos/>
+		</section>
 
 		<!-- Sobre mi -->
-		<SobreMi>
+		<!--SobreMi-->
 	</main>
 	<Footer/>
 </Layout>
