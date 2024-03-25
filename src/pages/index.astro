@@ -1,22 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 import Badge from "../components/Badge.astro";
 import LinkedinIcon from "../components/Icons/Linkedin.astro";
 import GithubIcon from "../components/Icons/Github.astro";
 import MailIcon from "../components/Icons/Mail.astro";
+import Experiencia from "../components/Experiencia.astro";
 import Proyectos from "../components/Proyectos.astro";
 import SobreMi from "../components/SobreMi.astro";
 import Footer from "../components/Footer.astro";
+import SocialPill from "../components/Icons/SocialPill.astro";
 ---
 
 <Layout
   title="Leonardo Rico - Portfolio de Ingeniero Informático"
   description="Contrata al mejor programador del mundo"
 >
-  <main class="px-6">
-    <!-- md:max-w-4xl mx-10 md:mx-auto pt-16 md:pt-36 -->
-    <section class="lg:w-[740px] md:mx-auto md:pt-44 pt-28 w-full">
+  <main>
+    <SectionContainer class="py-44 pb-24">
       <h1
         class="flex flex-row font-bold gap-x-4 md:text-3xl pb-10 text-white text-xl"
       >
@@ -39,47 +41,27 @@ import Footer from "../components/Footer.astro";
         innovadores y aprender de profesionales experimentados en la industria.
       </h2>
 
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <a
-          href="https://linkedin.com/in/leonardo-rico"
-          target="_blank"
-          class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2
-				   		hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition"
-        >
+      <nav class="flex gap-x-4 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/leonardo-rico/">
           <LinkedinIcon class="size-5 md:size-6" />
           Linkedin
-        </a>
+        </SocialPill>
 
-        <a
-          href="https://github.com/HardCoder05"
-          target="_blank"
-          class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2
-				   	hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition"
-        >
+        <SocialPill href="https://github.com/HardCoder05">
           <GithubIcon class="size-5 md:size-6" />
           Github
-        </a>
+        </SocialPill>
 
-        <a
-          href="mailto:rio88920@gmail.com"
-          class="text-white rounded-full bg-white/5 border border-white/10 flex gap-x-2
-				   	hover:bg-white/10 hover:scale-110 items-center justify-center md:px-4 md:py-2 px-2 py-1 transition"
-        >
+        <SocialPill href="mailto:rio88920@gmail.com">
           <MailIcon class="size-5 md:size-6" />
           rio88920@gmail.com
-        </a>
+        </SocialPill>
       </nav>
-    </section>
+    </SectionContainer>
 
-    <!-- Descripcion de los proyectos -->
-    <section class="lg:w-[740px] md:mx-auto w-full">
-      <Proyectos />
-    </section>
-
-    <!-- Sobre mi -->
-    <section class="lg:w-[740px] md:mx-auto w-full">
-      <SobreMi />
-    </section>
+    <SectionContainer>
+      <h2 class="text-2xl font-semibold mb-6">Experiencia Laboral</h2>
+      <Experiencia />
+    </SectionContainer>
   </main>
-  <Footer />
 </Layout>
