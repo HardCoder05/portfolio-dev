@@ -12,10 +12,14 @@ To deploy this project on your local machine, follow these steps:
 
 1. Open your terminal.
 2. Clone the repository using the command: 
-    `git clone <repository-url>`
+    
+    `git clone git@github.com:HardCoder05/portfolio-dev.git`
 3. Navigate to the project directory: 
+    
     `cd portfolio-dev`
 4. If necessary, install the required dependencies: 
+    
     `npm install` or `pnpm install`
 5. Run the project in your local host with: 
+    
     `npm run dev` or  `pnpm dev`
