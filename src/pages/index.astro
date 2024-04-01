@@ -1,14 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Badge from "../components/Badge.astro";
 import LinkedinIcon from "../components/Icons/Linkedin.astro";
 import GithubIcon from "../components/Icons/Github.astro";
 import MailIcon from "../components/Icons/Mail.astro";
-import Experiencia from "../components/Experiencia.astro";
+//import Experiencia from "../components/Experiencia.astro";
 import CodeIcon from "../components/Icons/Code.astro";
 import Proyectos from "../components/Proyectos.astro";
+import UserIcon from "../components/Icons/User.astro";
 import SobreMi from "../components/SobreMi.astro";
 import Footer from "../components/Footer.astro";
 import SocialPill from "../components/Icons/SocialPill.astro";
@@ -21,9 +21,9 @@ import SocialPill from "../components/Icons/SocialPill.astro";
   <main class="px-4">
     <SectionContainer className="py-36 md:py-44 pb-32 md:pb-48">
       <h1
-        class="flex flex-row font-bold gap-x-4 text-2xl md:text-3xl pb-10 text-white"
+        class="flex flex-row font-bold md:gap-x-4 text-2xl md:text-3xl pb-10 text-white"
       >
-        Hola, soy Ingeniero Informatico
+        Hola, soy <strong class="text-blue-700">Ingeniero Informatico</strong>
         <a
           href="/ex2_aplica.pdf"
           download
@@ -69,7 +69,7 @@ import SocialPill from "../components/Icons/SocialPill.astro";
 
     <SectionContainer id="proyectos" className="mb-16 md:mb-24">
       <h2
-        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white"
+        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-5 items-center text-white"
       >
         <CodeIcon class="size-7" />
         Proyectos
@@ -78,8 +78,10 @@ import SocialPill from "../components/Icons/SocialPill.astro";
     </SectionContainer>
 
     <SectionContainer id="sobre-mi" className="pt-16 pb-14 md:pb-10">
-      <h2 class="text-white
-        text-xl md:text-2xl font-semibold mb-8">
+      <h2
+        class="flex gap-x-4 text-white text-xl md:text-2xl font-semibold items-center mb-8"
+      >
+        <UserIcon class="size-7" />
         Sobre Mi
       </h2>
       <SobreMi />
