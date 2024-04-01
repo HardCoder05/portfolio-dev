@@ -7,6 +7,7 @@ import LinkedinIcon from "../components/Icons/Linkedin.astro";
 import GithubIcon from "../components/Icons/Github.astro";
 import MailIcon from "../components/Icons/Mail.astro";
 import Experiencia from "../components/Experiencia.astro";
+import CodeIcon from "../components/Icons/Code.astro";
 import Proyectos from "../components/Proyectos.astro";
 import SobreMi from "../components/SobreMi.astro";
 import Footer from "../components/Footer.astro";
@@ -64,6 +65,16 @@ import SocialPill from "../components/Icons/SocialPill.astro";
         Experiencia Laboral
       </h2>
       <Experiencia />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white"
+      >
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Proyectos />
     </SectionContainer>
   </main>
   <Footer />
