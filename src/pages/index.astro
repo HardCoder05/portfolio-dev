@@ -19,9 +19,9 @@ import SocialPill from "../components/Icons/SocialPill.astro";
   description="Contrata al mejor programador del mundo"
 >
   <main class="px-4">
-    <SectionContainer className="py-32 md:py-44 pb-20">
+    <SectionContainer className="py-36 md:py-44 pb-32 md:pb-48">
       <h1
-        class="flex flex-row font-bold gap-x-4 text-xl md:text-3xl pb-10 text-white"
+        class="flex flex-row font-bold gap-x-4 text-2xl md:text-3xl pb-10 text-white"
       >
         Hola, soy Ingeniero Informatico
         <a
@@ -44,7 +44,7 @@ import SocialPill from "../components/Icons/SocialPill.astro";
 
       <nav class="flex flex-wrap gap-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/leonardo-rico/">
-          <LinkedinIcon class="size-5 md:size-6" />
+          <LinkedinIcon class="size-4 md:size-6" />
           Linkedin
         </SocialPill>
 
@@ -54,22 +54,22 @@ import SocialPill from "../components/Icons/SocialPill.astro";
         </SocialPill>
 
         <SocialPill href="mailto:rio88920@gmail.com">
-          <MailIcon class="size-5 md:size-6" />
+          <MailIcon class="size-4 md:size-6" />
           rio88920@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
+    <!-- SectionContainer id="experiencia">
       <h2 class="text-white text-xl md:text-2xl font-semibold mb-8">
         Experiencia Laboral
       </h2>
       <Experiencia />
-    </SectionContainer>
+    </SectionContainer -->
 
-    <SectionContainer id="proyectos">
+    <SectionContainer id="proyectos" className="mb-16 md:mb-24">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white"
+        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white"
       >
         <CodeIcon class="size-7" />
         Proyectos
@@ -77,7 +77,7 @@ import SocialPill from "../components/Icons/SocialPill.astro";
       <Proyectos />
     </SectionContainer>
 
-    <SectionContainer id="sobre-mi" className="pt-16 pb-10">
+    <SectionContainer id="sobre-mi" className="pt-16 pb-14 md:pb-10">
       <h2 class="text-white
         text-xl md:text-2xl font-semibold mb-8">
         Sobre Mi
