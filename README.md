@@ -1,25 +1,54 @@
-# Portfolio Project
+# Proyecto de Portafolio
 
-This is my personal portfolio project. It showcases my skills, projects, and experiences as a software developer.
+Este es mi proyecto de portafolio personal que muestra mis habilidades, proyectos y experiencias como desarrollador de software.
 
-## Description
+## Descripción
 
-This portfolio is a comprehensive view of my technical skills and abilities. It includes a variety of projects that I've worked on, as well as a detailed account of my experiences in the field of software development.
+Este portafolio ofrece una visión integral de mis habilidades y capacidades técnicas. Incluye una variedad de proyectos en los que he trabajado, junto con descripciones detalladas de mis experiencias en el campo del desarrollo de software.
 
 ## Deployment
 
-To deploy this project on your local machine, follow these steps:
+Para desplegar este proyecto en tu máquina local, sigue estos pasos:
 
-1. Open your terminal.
-2. Clone the repository using the command: 
-    
-    `git clone git@github.com:HardCoder05/portfolio-dev.git`
-3. Navigate to the project directory: 
-    
-    `cd portfolio-dev`
-4. If necessary, install the required dependencies: 
-    
-    `npm install` or `pnpm install`
-5. Run the project in your local host with: 
-    
-    `npm run dev` or  `pnpm dev`
+1. Abre tu terminal.
+
+2. Clona el repositorio usando el comando:
+
+    ```bash
+    git clone git@github.com:HardCoder05/portfolio-dev.git
+    ```
+
+3. Navega al directorio del proyecto:
+
+    ```bash
+    cd portfolio-dev
+    ```
+
+4. Si es necesario, instala las dependencias requeridas:
+
+    ```bash
+    npm install
+    ```
+
+    o
+
+    ```bash
+    pnpm install
+    ```
+
+5. Ejecuta el proyecto en tu host local con:
+
+    ```bash
+    npm run dev
+    ```
+
+    o
+
+    ```bash
+    pnpm dev
+    ```
+
+
+## Créditos
+
+Este diseño de portafolio está basado en el modelo de [Portafolio de Midudev](https://github.com/midudev/porfolio.dev).
