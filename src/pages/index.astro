@@ -18,12 +18,14 @@ import SocialPill from "../components/Icons/SocialPill.astro";
   title="Leonardo Rico - Portfolio de Ingeniero Informático"
   description="Contrata al mejor programador del mundo"
 >
-  <main class="px-4">
-    <SectionContainer className="py-36 md:py-44 pb-32 md:pb-48">
+  <main class="px-6 md:px-20 lg:px-4">
+    <SectionContainer
+      className="py-16 md:py-28 lg:py-44 pb-28 md:pb-32 lg:pb-48"
+    >
       <h1
-        class="flex flex-row font-bold md:gap-x-4 text-2xl md:text-3xl pb-10 text-white"
+        class="flex flex-row font-bold gap-x-2 md:gap-x-4 text-lg md:text-2xl lg:text-3xl pb-10 text-white"
       >
-        Hola, soy <strong class="text-blue-700">Ingeniero Informatico</strong>
+        Hola, soy<strong class="text-blue-700">Ingeniero Informatico</strong>
         <a
           href="/ex2_aplica.pdf"
           download
@@ -34,7 +36,7 @@ import SocialPill from "../components/Icons/SocialPill.astro";
       </h1>
 
       <h2
-        class="max-w-[700px] md:text-xl opacity-80 text-pretty text-sm text-white"
+        class="max-w-[700px] text-sm md:text-base lg:text-xl opacity-80 text-pretty text-white"
       >
         Estoy en busca de una oportunidad laboral competente para aplicar y
         expandir mis conocimientos técnicos, contribuyendo al desarrollo de
@@ -44,32 +46,32 @@ import SocialPill from "../components/Icons/SocialPill.astro";
 
       <nav class="flex flex-wrap gap-4 mt-8">
         <SocialPill href="https://www.linkedin.com/in/leonardo-rico/">
-          <LinkedinIcon class="size-4 md:size-6" />
+          <LinkedinIcon class="size-4 lg:size-6" />
           Linkedin
         </SocialPill>
 
         <SocialPill href="https://github.com/HardCoder05">
-          <GithubIcon class="size-5 md:size-6" />
+          <GithubIcon class="size-5 lg:size-6" />
           Github
         </SocialPill>
 
         <SocialPill href="mailto:rio88920@gmail.com">
-          <MailIcon class="size-4 md:size-6" />
+          <MailIcon class="size-4 lg:size-6" />
           rio88920@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
 
     <!-- SectionContainer id="experiencia">
-      <h2 class="text-white text-xl md:text-2xl font-semibold mb-8">
+      <h2 class="text-white text-xl lg:text-2xl font-semibold mb-8">
         Experiencia Laboral
       </h2>
       <Experiencia />
     </SectionContainer -->
 
-    <SectionContainer id="proyectos" className="mb-16 md:mb-24">
+    <SectionContainer id="proyectos" className="mb-16 lg:mb-24">
       <h2
-        class="text-xl md:text-3xl font-semibold mb-6 flex gap-x-5 items-center text-white"
+        class="text-xl lg:text-3xl font-semibold mb-6 flex gap-x-5 items-center text-white"
       >
         <CodeIcon class="size-7" />
         Proyectos
@@ -77,9 +79,9 @@ import SocialPill from "../components/Icons/SocialPill.astro";
       <Proyectos />
     </SectionContainer>
 
-    <SectionContainer id="sobre-mi" className="pt-16 pb-14 md:pb-10">
+    <SectionContainer id="sobre-mi" className="pt-16 pb-14 lg:pb-10">
       <h2
-        class="flex gap-x-4 text-white text-xl md:text-2xl font-semibold items-center mb-8"
+        class="flex gap-x-4 text-white text-xl lg:text-2xl font-semibold items-center mb-8"
       >
         <UserIcon class="size-7" />
         Sobre Mi
