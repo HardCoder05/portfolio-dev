@@ -19,19 +19,19 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "LOREM IPSUM DOLOR SIT AMET",
     description:
-      "Created from scratch with Next.js and Tailwind CSS. It's a library with SVG logos from the most popular brands. Optimized for SEO and performance.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/intro.jpg",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies.",
+    link: "#",
+    github: "#",
+    image: "/",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ];
 ---
 
 {
-  PROJECTS.map(({ image, title, description, tags }) => (
+  PROJECTS.map(({ image, title, description, link, github,tags }) => (
     <article class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28" data-aos="zoom-in-up" data-aos-duration="1000">
       <img
         class="rounded shadow-2xl shadow-white/10 max-w-xs md:max-w-lg lg:max-w-[400px] h-40 md:h-56 lg:h-64 mt-2"
@@ -58,7 +58,7 @@ const PROJECTS = [
 
         <div class="flex flex-row gap-x-5">
           <div class="w-44 h-20 flex items-center cursor-pointer">
-            <a href="https://github.com/pheralb/svgl" target="_blank" rel="noopener noreferrer">
+            <a href = {github} target="_blank" rel="noopener noreferrer">
               <div
                 class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow 
             text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-200 group"
@@ -80,7 +80,7 @@ const PROJECTS = [
             </a>
           </div>
           <div class="w-full h-20 flex items-center cursor-pointer">
-            <a href="https://tabler.io/icons" target="_blank" rel="noopener noreferrer">
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <div
                 class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold shadow 
             text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-200 group"
