@@ -1,10 +1,10 @@
 # Proyecto de Portafolio
 
-Este es mi proyecto de portafolio personal que muestra mis habilidades, proyectos y experiencias como desarrollador de software.
+Este es mi proyecto de portafolio personal que muestra mis habilidades y proyectos.
 
 ## Descripción
 
-Este portafolio ofrece una visión integral de mis habilidades y capacidades técnicas. Incluye una variedad de proyectos en los que he trabajado, junto con descripciones detalladas de mis experiencias en el campo del desarrollo de software.
+Este portafolio ofrece una visión integral de mis habilidades y capacidades técnicas. Incluye una variedad de proyectos en los que he trabajado.
 
 ## Deployment
 
